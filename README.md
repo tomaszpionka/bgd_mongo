@@ -38,6 +38,8 @@ To use Data Science Blog, follow these steps:
 node app.js
 ```
 
+Open https://localhost:8000 in your web browser.
+
 ## Contributors
 
 Thanks to the following people who have contributed to this project:
