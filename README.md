@@ -15,7 +15,7 @@ Web app written in JavaScript, hosted on Heroku, using MongoDB 0 tier cluster.
 Before you begin, ensure you have met the following requirements:
 <!--- These are just example requirements. Add, duplicate or remove as required --->
 * You have installed the latest version of Node.js
-* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
+* You have a `<Windows/Linux/Mac>` machine.
 
 ## Installing Data Science Blog
 
