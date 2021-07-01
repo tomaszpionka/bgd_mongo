@@ -1,0 +1,40 @@
+
+<%- include("partials/header"); -%>
+
+    <h2><%=title%></h2>
+    <p><%=content%></p>
+    <form class="" action="/posts/delete/<%=postId%>" method="post">
+        <button class="btn btn-danger" type="submit" name="button">Delete</button>
+    </form>
+    
+    <div class="container">
+    <div class="row">
+    <div class="col-6">
+    <div>
+    <h4>Edit post</h4>
+    <form class="" action="/posts/update/<%=postId%>" method="post">
+        <div class="form-group">
+          <label>New content</label>
+          <textarea class="form-control" name="postBody" rows="5" cols="30"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">Update</button>
+    </form>
+    </div>
+    </div><div class="col-6">
+    <div>
+    <h4>Post comment</h4>
+    <form class="" action="/comments/post/<%=postId%>" method="post">
+        <div class="form-group">
+            <label>Author</label>
+            <input class="form-control" type="text" name="commentAuthor">
+          <label>Text</label>
+          <textarea class="form-control" name="commentBody" rows="5" cols="30"></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit" name="button">Share</button>
+    </form>
+    </div>
+    </div></div></div>
+
+    <%- include("comments"); -%>
+
+<%- include("partials/footer"); -%>

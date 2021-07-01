@@ -1,0 +1,11 @@
+<h2>Comments</h2>
+
+<%  comments.forEach(function(comment){ %>
+<div class="comment">
+<h6><b><%=comment.author%></b> says at <%=comment.timestamp%>:</h6>
+<p>
+<%=comment.content%>
+</p>
+</div>
+
+<% }) %>
