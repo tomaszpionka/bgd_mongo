@@ -17,7 +17,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin:z4TqpbNEoAduDWU2@bgd.nuzwg.mongodb.net/Blog?retryWrites=true&w=majority", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://admin:<PASSWORD>@bgd.nuzwg.mongodb.net/Blog?retryWrites=true&w=majority", {useNewUrlParser: true});
 
 /* 
 Replace <password> with the password for the admin user. 
